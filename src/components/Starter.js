@@ -5,7 +5,7 @@ import HyperText from "@/components/magicui/hyper-text";
 function Starter() {
     return (
         <>
-            <div className=' flex  gap-6'>
+            <div className=' flex  gap-6 justify-between'>
                 <div>
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-2"> Hi, I'm Maharshi 👋</h2>
                     <h3 className=' text-wrap max-w-96 text-xl'>Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.</h3>
