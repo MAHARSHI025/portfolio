@@ -9,17 +9,31 @@ export function DockDemo() {
             <div className="relative setter">
                 <Dock direction="middle">
                     <DockIcon>
-                        <Icons.gitHub className="size-6" />
+                        <div className=" flex justify-end items-end">
+                            <a href="/" className="text-3xl">
+                                <span class="material-symbols-outlined">
+                                    home
+                                </span>
+                            </a>
+                        </div>
                     </DockIcon>
                     <DockIcon>
-                        <img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/600/Instagram_glyph_svg-1024.png" className=" h-6 m-0 rounded-full blackesh" alt="" />
+                        <a href="https://github.com/MAHARSHI025"><Icons.gitHub className="size-6" /></a>
                     </DockIcon>
                     <DockIcon>
-                        {/* <img src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Linkedin_glyph_svg-1024.png" className=" h-6 m-0" alt="" /> */}
-                        <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-1024.png" className=" h-6 m-0" alt="" />
+                        <a href="https://www.instagram.com/_maharshi_025?igsh=NmJ0ZXU3ZXlqNGgy&utm_source=qr">
+                            <img src="https://cdn4.iconfinder.com/data/icons/social-media-black-white-2/600/Instagram_glyph_svg-1024.png" className=" h-6 m-0 rounded-full blackesh" alt="" />
+                        </a>
                     </DockIcon>
                     <DockIcon>
-                        <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Whatsapp_svg2-1024.png" className=" h-6 m-0 rounded-full" alt="" />
+                        <a href="https://www.linkedin.com/in/maharshi-patel-9a9a29261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                            <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-1024.png" className=" h-6 m-0" alt="" />
+                        </a>
+                    </DockIcon>
+                    <DockIcon>
+                        <a href="https://www.instagram.com/_maharshi_025?igsh=NmJ0ZXU3ZXlqNGgy&utm_source=qr">
+                            <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Whatsapp_svg2-1024.png" className=" h-6 m-0 rounded-full" alt="" />
+                        </a>
                     </DockIcon>
                 </Dock>
             </div>

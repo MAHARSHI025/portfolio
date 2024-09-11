@@ -63,19 +63,46 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
-.midder{
+*{
+  margin: 0;
+  padding: 0;
+}
+.midder {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.setter{
-  position: absolute;
+
+.setter {
+  position: fixed;
   bottom: 10px;
 }
-.blackesh{
+
+.blackesh {
   /* filter: grayscale(1); */
+}
+
+.home {
+  /* max-width: 20rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.innerhome {
+  max-width: 45rem;
+  /* border: 1px solid; */
+}
+
+.profileimg {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 100%;
+  object-fit: contain;
 }
