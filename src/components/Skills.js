@@ -1,44 +1,9 @@
 import React from 'react'
-import IconCloud from "@/components/magicui/icon-cloud";
-
-
-const slugs = [
-    "typescript",
-    "javascript",
-    "java",
-    "react",
-    "android",
-    "html5",
-    "css3",
-    "nodedotjs",
-    "express",
-    "nextdotjs",
-    // "amazonaws",
-    // "firebase",
-    "vercel",
-    "postman",
-    // "docker",
-    "git",
-    "github",
-    // "gitlab",
-    "visualstudiocode",
-    "androidstudio",
-    "youtube",
-    "bootstrap",
-    "tailwindcss",
-    "mongodb",
-    "python",
-    "figma",
-];
 
 function Skills() {
     return (
         <>
-            {/* <div className=' flex justify-center items-center'>
-                <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg  bg-background px-20 pb-20 pt-8 ">
-                    <IconCloud iconSlugs={slugs} />
-                </div>
-            </div> */}
+    
 
             <div className=' mt-10'>
                 <h1 className='text-xl font-bold tracking-tighter sm:text-xl xl:text-xl/none mb-2'>Frameworks </h1>
@@ -80,7 +45,7 @@ function Skills() {
                 <h1 className='text-xl font-bold tracking-tighter sm:text-xl xl:text-xl/none mb-2'>Deployment </h1>
                 <div className=' flex blackish gap-4'>
                     <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" className='bg-white border border-white rounded-full h-10' alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" className='bg-white border-white border rounded-full h-10' alt="" />
                         <h1 className=' text-2xl ml-2'>Github</h1>
                     </div>
                     <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>

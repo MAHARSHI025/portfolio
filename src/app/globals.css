@@ -68,10 +68,12 @@
     @apply bg-background text-foreground;
   }
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
+
 .midder {
   display: flex;
   justify-content: center;
@@ -84,7 +86,7 @@
 }
 
 .blackish {
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 
 .home {
@@ -105,4 +107,22 @@
   width: 10rem;
   border-radius: 100%;
   object-fit: contain;
+}
+
+.rough {
+  color: #777777 !important;
+}
+video{
+  border-radius: 50px 50px 0px 0px;
+}
+.videosetter{
+  position: relative;
+  bottom: 30px;
+}
+.videoradius{
+  border-radius: 50px ;
+}
+.roughbg{
+  background-color: #e9e9e9;
+  
 }
