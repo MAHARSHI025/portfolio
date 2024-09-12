@@ -24,7 +24,7 @@ function Education() {
                         <img src="https://student.gtu.ac.in/assets/img/fnewgtulogo.png" className=' h-14 rounded-full border border-x-gray-700' alt="" />
                         <div>
                             <h1 className='text-lg font-semibold tracking-tighter sm:text-lg xl:text-lg/none mb-2'>Gujarat technology university </h1>
-                            <h3>Bachelor's of engineering</h3>
+                            <h3>Bachelor&apos;s of engineering</h3>
                         </div>
                     </div>
                     <div className='block'>

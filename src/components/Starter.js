@@ -7,7 +7,7 @@ function Starter() {
         <>
             <div className=' flex  gap-6 justify-between'>
                 <div>
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-2"> Hi, I'm Maharshi 👋</h2>
+                    <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-2"> Hi, I&apos;m Maharshi 👋</h2>
                     <h3 className=' text-wrap max-w-96 text-xl rough'>Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.</h3>
                     <HyperText
                         className="text-4xl font-bold text-black dark:text-white"
