@@ -7,7 +7,7 @@ function Skills() {
 
             <div className=' mt-10'>
                 <h1 className='text-xl font-bold tracking-tighter sm:text-xl xl:text-xl/none mb-2'>Frameworks </h1>
-                <div className=' flex blackish gap-4'>
+                <div className=' flex blackish flex-wrap gap-4'>
                     <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
                         <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className=' h-10' alt="" />
                         <h1 className=' text-2xl ml-2'>React</h1>
@@ -25,7 +25,7 @@ function Skills() {
 
             <div className=' mt-10'>
                 <h1 className='text-xl font-bold tracking-tighter sm:text-xl xl:text-xl/none mb-2'>Languages </h1>
-                <div className=' flex blackish gap-4'>
+                <div className=' flex blackish gap-4 flex-wrap'>
                     <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" className='rounded-full h-10' alt="" />
                         <h1 className=' text-2xl ml-2'>Javascript</h1>
@@ -43,7 +43,7 @@ function Skills() {
 
             <div className=' mt-10'>
                 <h1 className='text-xl font-bold tracking-tighter sm:text-xl xl:text-xl/none mb-2'>Deployment </h1>
-                <div className=' flex blackish gap-4'>
+                <div className=' flex blackish gap-4 flex-wrap'>
                     <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
                         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" className='bg-white border-white border rounded-full h-10' alt="" />
                         <h1 className=' text-2xl ml-2'>Github</h1>
@@ -62,7 +62,7 @@ function Skills() {
             <div className='mt-10'>
                 <h1 className='text-xl font-bold tracking-tighter sm:text-xl xl:text-xl/none mb-2'>Others</h1>
 
-                <div className=' flex gap-4'>
+                <div className=' flex gap-4 flex-wrap'>
                     <div className=' flex blackish gap-4'>
                         <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
                             <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" className='rounded-full h-10' alt="" />

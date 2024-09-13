@@ -1,9 +1,10 @@
-"use client";;
+"use client";
 import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
 
-export const cloudProps = {
+// Define cloudProps outside the component
+const initialCloudProps = {
   containerProps: {
     style: {
       display: "flex",
@@ -24,9 +25,8 @@ export const cloudProps = {
     clickToFront: 500,
     tooltipDelay: 0,
     outlineColour: "#0000",
-    maxSpeed: 0.04,
+    maxSpeed: 0.04, // Default maxSpeed
     minSpeed: 0.02,
-    // dragControl: false,
   },
 };
 
@@ -50,11 +50,33 @@ export const renderCustomIcon = (icon, theme) => {
   });
 };
 
-export default function IconCloud({
-  iconSlugs
-}) {
+export default function IconCloud({ iconSlugs }) {
   const [data, setData] = useState(null);
+  const [cloudProps, setCloudProps] = useState(initialCloudProps);
   const { theme } = useTheme();
+
+  // Function to calculate and set maxSpeed based on screen width
+  const updateCloudProps = () => {
+    const newMaxSpeed = window.innerWidth < 800 ? 0.004 : 0.04;
+    setCloudProps((prev) => ({
+      ...prev,
+      options: {
+        ...prev.options,
+        maxSpeed: newMaxSpeed,
+      },
+    }));
+  };
+
+  useEffect(() => {
+    // Call it once on mount
+    updateCloudProps();
+
+    // Add a resize event listener
+    window.addEventListener("resize", updateCloudProps);
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener("resize", updateCloudProps);
+  }, []);
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
@@ -64,13 +86,14 @@ export default function IconCloud({
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"));
+      renderCustomIcon(icon, theme || "light")
+    );
   }, [data, theme]);
 
   return (
     // @ts-ignore
-    (<Cloud {...cloudProps}>
+    <Cloud {...cloudProps}>
       <>{renderedIcons}</>
-    </Cloud>)
+    </Cloud>
   );
 }

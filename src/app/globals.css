@@ -118,6 +118,7 @@ video{
 .videosetter{
   position: relative;
   bottom: 30px;
+  
 }
 .videoradius{
   border-radius: 50px ;
@@ -125,4 +126,24 @@ video{
 .roughbg{
   background-color: #e9e9e9;
   
+}
+
+
+@media (max-width: 800px) {
+  .home{
+    margin: 2rem;
+  }
+  .videosetter{
+    margin: 0;
+  }
+  .videoradius{
+    margin: 2rem 0rem;
+    
+  }
+}
+@media (max-width: 800px){
+  .profileimg{
+    height: auto;
+    width: auto;
+  }
 }
