@@ -107,43 +107,57 @@
   width: 10rem;
   border-radius: 100%;
   object-fit: contain;
+  /* min-width: 100px;
+  min-height: 100px; */
 }
 
 .rough {
   color: #777777 !important;
 }
-video{
+
+video {
   border-radius: 50px 50px 0px 0px;
 }
-.videosetter{
+
+.videosetter {
   position: relative;
   bottom: 30px;
-  
+
 }
-.videoradius{
-  border-radius: 50px ;
+
+.videoradius {
+  border-radius: 50px;
 }
-.roughbg{
+
+.roughbg {
   background-color: #e9e9e9;
-  
+
 }
 
 
 @media (max-width: 800px) {
-  .home{
+  .home {
     margin: 2rem;
   }
-  .videosetter{
+
+  .videosetter {
     margin: 0;
   }
-  .videoradius{
+
+  .videoradius {
     margin: 2rem 0rem;
-    
+
   }
 }
-@media (max-width: 800px){
-  .profileimg{
-    height: auto;
-    width: auto;
+
+@media (max-width: 800px) {
+
+  /* .profileimg{
+    min-height: 100px !important;
+    min-width: 100px !important;
+  } */
+  .divimage {
+    min-width: 10rem;
+    min-height: 10rem;
   }
 }
