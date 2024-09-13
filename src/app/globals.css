@@ -157,7 +157,22 @@ video {
     min-width: 100px !important;
   } */
   .divimage {
-    min-width: 10rem;
-    min-height: 10rem;
+    width: 120px;
+    height: 120px;
+
+  }
+  .profileimg{
+    width: 120px;
+    height: 120px;
+    object-fit: fill;
+  }
+  .mini{
+    max-width: 10rem;
+  }
+  .typer{
+    font-size: 2rem;
+  }
+  .videosetter h2{
+    margin-top: 1rem;
   }
 }

@@ -35,6 +35,15 @@ export function DockDemo() {
                             <img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Whatsapp_svg2-1024.png" className=" h-6 m-0 rounded-full" alt="" />
                         </a>
                     </DockIcon>
+                    <DockIcon>
+                        <div className=" flex justify-end items-end">
+                            <a href="/" className="text-3xl">
+                                <span class="material-symbols-outlined">
+                                    book
+                                </span>
+                            </a>
+                        </div>
+                    </DockIcon>
                 </Dock>
             </div>
         </div>

@@ -26,7 +26,7 @@ const initialCloudProps = {
     tooltipDelay: 0,
     outlineColour: "#0000",
     maxSpeed: 0.04, // Default maxSpeed
-    minSpeed: 0.02,
+    minSpeed: 0.02, // Default minSpeed
   },
 };
 
@@ -40,7 +40,7 @@ export const renderCustomIcon = (icon, theme) => {
     bgHex,
     fallbackHex,
     minContrastRatio,
-    size: 42,
+    size: 45,
     aProps: {
       href: undefined,
       target: undefined,
@@ -55,14 +55,18 @@ export default function IconCloud({ iconSlugs }) {
   const [cloudProps, setCloudProps] = useState(initialCloudProps);
   const { theme } = useTheme();
 
-  // Function to calculate and set maxSpeed based on screen width
+  // Function to calculate and set maxSpeed and minSpeed based on screen width
   const updateCloudProps = () => {
-    const newMaxSpeed = window.innerWidth < 800 ? 0.004 : 0.04;
+    const isSmallScreen = window.innerWidth < 800;
+    const newMaxSpeed = isSmallScreen ? 0.004 : 0.04;
+    const newMinSpeed = isSmallScreen ? 0.02 : 0.02;
+
     setCloudProps((prev) => ({
       ...prev,
       options: {
         ...prev.options,
         maxSpeed: newMaxSpeed,
+        minSpeed: newMinSpeed,
       },
     }));
   };
