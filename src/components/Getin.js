@@ -10,7 +10,7 @@ function Getin() {
                     </h1>
                 </a>
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none mb-2 text-">Get in touch</h2>
-                <h3 className=' text-wrap text-xl rough'>Want to chat? Just shoot me a dm with a direct question on twitter and I'll respond whenever I can. I will ignore all soliciting.</h3>
+                <h3 className=' text-wrap text-xl rough'>Want to chat? Just shoot me a dm with a direct question on twitter and I&apos;ll respond whenever I can. I will ignore all soliciting.</h3>
 
             </div>
         </>
