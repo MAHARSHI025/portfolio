@@ -142,7 +142,9 @@ video {
 
 @media (max-width: 800px) {
   .home {
-    margin: 2rem;
+    margin: 2rem 1rem;
+    margin-top: 0.8rem;
+
   }
 
   .videosetter {

@@ -6,15 +6,15 @@ function Project() {
             <div className=' mt-16 '>
 
                 <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl xl:text-5xl/none mb-2 text-"> Check out my latest work</h2>
-                <h3 className=' text-wrap text-xl rough'>Software Engineer turned Entrepreneur. I love building things and helping . Very active on Twitter.</h3>
+                <h3 className=' text-wrap text-xl rough'>Software and Website developing is like a passion and that&apos;s how I follow my passion.</h3>
 
                 <div className=' videoradius mt-8 border border-gray-500 m-8 mb-0'>
                     <video src="video\Untitled design.mp4" loop autoPlay playsInline muted className=''></video>
 
                     <div className='videosetter px-4'>
                         <h2 className="text-3xl font-bold tracking-tighter  mb-2 ">Thouhter app</h2>
-                        <h3 className=' text-wrap text-base bg-white '>Software Engineer turned Entrepreneur. I love building things and helping . Very active on Twitter.</h3>
-                        <h3 className=' text-wrap text-sm rough mt-4'>With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.</h3>
+                        <h3 className=' text-wrap text-base bg-white '>I am working on a thoughfull web app that will store and share thoughts to all around</h3>
+                        <h3 className=' text-wrap text-sm rough mt-4'>A passionate software and web developer with expertise in creating efficient and user-friendly applications, specializing in both frontend and backend technologies.</h3>
                         <div className=' flex text-black gap-4 mt-4 flex-wrap'>
                             <h1 className='roughbg px-2 rounded-lg'>Next.js</h1>
                             <h1 className='roughbg px-2 rounded-lg'>Node.js</h1>
