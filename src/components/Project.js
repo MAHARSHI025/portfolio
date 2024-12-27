@@ -12,8 +12,8 @@ function Project() {
                     <video src="video\Untitled design.mp4" loop autoPlay playsInline muted className=''></video>
 
                     <div className='videosetter px-4'>
-                        <h2 className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-5xl/none mb-2 ">Thouhter app</h2>
-                        <h3 className=' text-wrap text-xl bg-white '>Software Engineer turned Entrepreneur. I love building things and helping . Very active on Twitter.</h3>
+                        <h2 className="text-3xl font-bold tracking-tighter  mb-2 ">Thouhter app</h2>
+                        <h3 className=' text-wrap text-base bg-white '>Software Engineer turned Entrepreneur. I love building things and helping . Very active on Twitter.</h3>
                         <h3 className=' text-wrap text-sm rough mt-4'>With the release of the OpenAI GPT Store, I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.</h3>
                         <div className=' flex text-black gap-4 mt-4 flex-wrap'>
                             <h1 className='roughbg px-2 rounded-lg'>Next.js</h1>
@@ -23,7 +23,7 @@ function Project() {
                             <h1 className='roughbg px-2 rounded-lg'>Vercel</h1>
                             <h1 className='roughbg px-2 rounded-lg'>React</h1>
                         </div>
-                        <div className=' mt-4 flex gap-4'>
+                        <div className=' mt-4 flex gap-4 flex-wrap'>
                             <a href="https://thoughter.vercel.app/">
                                 <h1 className='bg-black text-white px-3 py-1 rounded-lg  flex items-center justify-between'>
                                     Website

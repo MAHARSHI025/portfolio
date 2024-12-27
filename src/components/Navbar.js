@@ -37,7 +37,7 @@ export function DockDemo() {
                     </DockIcon>
                     <DockIcon>
                         <div className=" flex justify-end items-end">
-                            <a href="/" className="text-3xl">
+                            <a href="/blogs" className="text-3xl">
                                 <span class="material-symbols-outlined">
                                     book
                                 </span>

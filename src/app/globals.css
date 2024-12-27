@@ -79,7 +79,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .setter {
   position: fixed;
   bottom: 10px;
@@ -87,6 +86,12 @@
 
 .blackish {
   /* filter: grayscale(1); */
+  
+}
+.blackish div{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
 }
 
 .home {
@@ -116,7 +121,7 @@
 }
 
 video {
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 2rem;
 }
 
 .videosetter {
@@ -148,6 +153,9 @@ video {
     margin: 2rem 0rem;
 
   }
+  body{
+    margin-bottom: 5rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -156,18 +164,20 @@ video {
     min-height: 100px !important;
     min-width: 100px !important;
   } */
+  .mini{
+    /* max-width: 10rem; */
+    margin-top: 120px;
+  }
   .divimage {
-    width: 120px;
-    height: 120px;
-
+    width: 100px !important;
+    height: 100px !important;
+    position: absolute;
+    right: 15px;
   }
   .profileimg{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: fill;
-  }
-  .mini{
-    max-width: 10rem;
   }
   .typer{
     font-size: 2rem;
@@ -175,4 +185,5 @@ video {
   .videosetter h2{
     margin-top: 1rem;
   }
+  
 }
