@@ -12,22 +12,20 @@ const slugs = [
     "nodedotjs",
     "express",
     "nextdotjs",
-    // "amazonaws",
-    // "firebase",
     "vercel",
     "postman",
-    // "docker",
     "git",
     "github",
-    // "gitlab",
     "visualstudiocode",
     "androidstudio",
-    "youtube",
     "bootstrap",
     "tailwindcss",
     "mongodb",
     "python",
     "figma",
+    "mysql",
+    "typescript",
+    
 ];
 
 function Contact() {

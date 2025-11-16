@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" />
 
 
-        <section id="header">
+        <section id="header" className=" mb-20">
           <BlurFade delay={0.25} inView>
             {children}
           </BlurFade>

@@ -1,27 +1,29 @@
 import React from 'react'
-import TextReveal from "@/components/magicui/text-reveal";
-import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
-import Getin from '@/components/Getin';
+
+import { Timeline } from '@/components/ui/timeline';
+import Chess from '@/components/Chess';
 
 function page() {
+   const puzzle = {
+    fen: "r1bq2r1/b4pk1/p1pp1p2/1p2pP2/1P2P1PB/3P4/1PPQ2P1/R3K2R w",
+    sequence: [
+        "Qh6", "Kxh6",
+        "Bxf6#"
+    ],
+    description: "Easy challenge — mate in 2 with a Queen sacrifice"
+};
+
+
     return (
         <>
-            <div>
-                <div className="z-10 flex min-h-[10rem] items-center justify-center rounded-lg  bg-white dark:bg-black border-black m-6">
-                    <TextReveal text="Magic UI will change the way you design." />
+            <div className=' mb-50'>
+                <div className="home mb-16">
+                    <div className="innerhome">
+                        <Timeline></Timeline>
+                    </div>
                 </div>
+                <Chess puzzle={puzzle}></Chess>
 
-                <VelocityScroll
-                    text="Web App Developer"
-                    default_velocity={5}
-                    className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
-                />
-
-
-                <div className="z-10 flex min-h-[16rem] items-center justify-center rounded-lg border bg-white dark:bg-black border-black m-6">
-                    {/* <TextReveal text="Magic UI will change the way you design." /> */}
-                    <Getin></Getin>
-                </div>
 
             </div>
 
