@@ -35,8 +35,8 @@ function Skills() {
                         <h1 className=' text-2xl ml-2'>Python</h1>
                     </div>
                     <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
-                        <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" className='rounded-full h-10' alt="" />
-                        <h1 className=' text-2xl ml-2'>Java</h1>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1200px-Typescript.svg.png" className='rounded-full h-10' alt="" />
+                        <h1 className=' text-2xl ml-2'>Typescript</h1>
                     </div>
                 </div>
             </div>
@@ -52,10 +52,7 @@ function Skills() {
                         <img src="https://smlvqzf0a1b66cku.public.blob.vercel-storage.com/images/Vercel%20Logo-IMoeV2W33gFclXzAfZxmAHqtjBuTzP.png" className='bg-white border border-white rounded-full h-10' alt="" />
                         <h1 className=' text-2xl ml-2'>Vercel</h1>
                     </div>
-                    <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
-                        <img src="https://www.gstatic.com/devrel-devsite/prod/vff8c7d35de8ade382e79c3b9a923182d876d284b6ae43035fbefc80d49042a6e/firebase/images/touchicon-180.png" className=' rounded-full h-10' alt="" />
-                        <h1 className=' text-2xl ml-2'>Firebasse</h1>
-                    </div>
+                    
                 </div>
             </div>
 
@@ -65,7 +62,7 @@ function Skills() {
                 <div className=' flex gap-4 flex-wrap'>
                     <div className=' flex blackish gap-4'>
                         <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
-                            <img src="https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png" className='rounded-full h-10' alt="" />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6bebC_d4eWwJ-x9ntqDuT94TvOgumSBVWHg&s" className='rounded-full h-10' alt="" />
                             <h1 className=' text-2xl ml-2'>Node.js</h1>
                         </div>
                     </div>
@@ -77,8 +74,14 @@ function Skills() {
                     </div>
                     <div className='flex blackish gap-4'>
                         <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
-                            <img src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" className='rounded-full h-10 ' alt="" />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITHn_TgjDyhdWvePNw0mveDrTUr00GLfv_Q&s" className='rounded-full h-10 ' alt="" />
                             <h1 className=' text-2xl ml-2'>Mongodb</h1>
+                        </div>
+                    </div>
+                    <div className='flex blackish gap-4'>
+                        <div className=' bg-black text-white flex justify-center items-center font-semibold rounded-full px-6 py-2.5'>
+                            <img src="https://images.seeklogo.com/logo-png/27/1/mysql-logo-png_seeklogo-273735.png" className='rounded-full h-10 ' alt="" />
+                            <h1 className=' text-2xl ml-2'>Mysql</h1>
                         </div>
                     </div>
                 </div>
