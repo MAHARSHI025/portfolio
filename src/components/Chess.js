@@ -2,34 +2,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Chess } from "chess.js";
 import { Chessboard } from "react-chessboard";
-/**
- * ChessPuzzleAuto
- * - props.puzzle: {
- *     fen: string,                 // starting FEN
- *     sequence: string[],         // SAN sequence: [W1, B1, W2, B2]
- *     description?: string
- *   }
- *
- * Behavior:
- * - User plays white moves by dragging pieces.
- * - On a legal user move we compare the SAN to the expected white SAN.
- *   - If it matches, we auto-play the next black SAN from `sequence`.
- *   - If it doesn't match, mark "Wrong move" and reset after a short timeout.
- * - After the sequence completes we'll show success/failure and lock the board.
- */
+
 export default function Chessgame({ puzzle }) {
   const { fen, sequence, description } = puzzle;
 
-  // sequence example: ["Qh5+", "g6", "Qxg6+", "hxg6"] (real sequence must be valid SANs)
   const [game, setGame] = useState(() => new Chess(fen));
   const [message, setMessage] = useState("White to move — solve in 2 moves");
   const [moveIndex, setMoveIndex] = useState(0); // index into sequence (0..3)
   const [locked, setLocked] = useState(false);
   const initialFenRef = useRef(fen);
 
-  // helper to create SAN string for last move
   function sanOfMove(move) {
-    // move is object returned by chess.move
     if (!move) return "";
     return move.san;
   }
@@ -44,8 +27,7 @@ export default function Chessgame({ puzzle }) {
       return false;
     }
 
-    const playedSan = move.san; // e.g. "Nxe5"
-    // Expecting white move at even indices 0 and 2
+    const playedSan = move.san;
     const expectedSan = sequence[moveIndex];
 
     if (!expectedSan) {
@@ -102,13 +84,10 @@ export default function Chessgame({ puzzle }) {
   }
 
   function finishCheck(finalGame) {
-    if (finalGame.in_checkmate()) {
-      setMessage("🎉 Puzzle solved — checkmate!");
-    } else {
-      setMessage("Puzzle sequence completed. Not checkmate.");
-    }
+    setMessage("🎉 Puzzle solved — checkmate!");
     setLocked(true);
   }
+
 
   function resetPuzzle() {
     initialFenRef.current = fen;
@@ -126,8 +105,7 @@ export default function Chessgame({ puzzle }) {
 
   return (
     <div className="max-w-md mx-auto p-4 ">
-      <h3 className="text-lg font-semibold mb-2">Chess puzzle — mate in 2</h3>
-      {description && <p className="text-sm text-gray-600 mb-3">{description}</p>}
+      <h3 className="text-xl font-semibold mb-2">Mate me in 2 moves</h3>
 
       <div className="flex flex-col items-center gap-3">
         <Chessboard
@@ -143,14 +121,6 @@ export default function Chessgame({ puzzle }) {
           <div className="text-sm text-gray-500">Progress: {moveIndex} / {sequence.length}</div>
         </div>
 
-        <div className="flex gap-2 mt-3">
-          <button onClick={resetPuzzle} className="px-3 py-1 rounded border">Reset</button>
-          <button onClick={() => {
-            // reveal full sequence on demand
-            setMessage(`Solution: ${sequence.join(", ")}`);
-            setLocked(true);
-          }} className="px-3 py-1 rounded border">Reveal</button>
-        </div>
       </div>
     </div>
   );

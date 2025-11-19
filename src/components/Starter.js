@@ -15,8 +15,22 @@ function Starter() {
                         animateOnLoad
                         duration={2000}
                     />
+                    <button
+                        className="
+                        relative right-2
+                        text-xl font-semibold mt-2 px-6 py-2 rounded-lg 
+                        bg-white border border-black
+                        transition-all duration-200
+                        shadow-[3px_3px_0px_black]
+                        active:shadow-[0px_0px_0px_black]
+                        active:translate-x-[3px] active:translate-y-[3px]
+                    "
+                    >
+                        Hire me
+                    </button>
+
                 </div>
-                <div className='divimage'>
+                <div className='divimage '>
                     <img src="images\IMG_4746.JPG" className=' profileimg aspect-square h-full w-full' alt="" />
                 </div>
             </div>

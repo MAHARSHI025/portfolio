@@ -5,9 +5,8 @@ import Chess from '@/components/Chess';
 
 function page() {
     const puzzle = {
-        fen: "2K3NR/PPP3PP/5P2/1n2P3/1B6/4bp1p/pp3ppp/1k1r4 w - - 0 1",
-        sequence: ["nxh2+", "Kg1", "re1#"],
-        description: "Easy challenge — mate in 2 with a Queen sacrifice"
+        fen: "2K3NR/1PP3PP/5P2/1n2P3/1B6/4bp1p/pp3ppp/1k1r4 b - - 0 1",
+        sequence: ["Na7+", "Kb8", "Rd8+"],
     };
 
 
