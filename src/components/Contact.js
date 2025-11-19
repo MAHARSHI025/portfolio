@@ -4,7 +4,6 @@ import IconCloud from "@/components/magicui/icon-cloud";
 const slugs = [
     "typescript",
     "javascript",
-    "java",
     "react",
     "android",
     "html5",
@@ -16,7 +15,6 @@ const slugs = [
     "postman",
     "git",
     "github",
-    "visualstudiocode",
     "androidstudio",
     "bootstrap",
     "tailwindcss",
@@ -25,7 +23,9 @@ const slugs = [
     "figma",
     "mysql",
     "typescript",
-    
+    "redux",
+    "npm",
+    "nodemon"
 ];
 
 function Contact() {

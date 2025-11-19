@@ -143,6 +143,29 @@ const data = [
       </div>
     ),
   },
+  {
+    title: "Campus Placement",
+    content: (
+      <div>
+        <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+         Alpha e barcode solution - Mern stack Intern
+        </p>
+        <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          Selected for the position of Frontend developer. Joining after my graduation in 2026.
+        </p>
+        
+        <div className="grid grid-cols-2 gap-4">
+          <img
+            src="https://media.licdn.com/dms/image/v2/C510BAQE5wQduJpQ13g/company-logo_200_200/company-logo_200_200/0/1630607612861/alphaebarcode_logo?e=2147483647&v=beta&t=pWIxFvAmnCZS4usfPm8j_sUn7Gb3FFInNCyQuWjMqAQ"
+            alt="hero template"
+           
+            className="rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+          />
+
+        </div>
+      </div>
+    ),
+  },
 ];
 
 export const Timeline = ({

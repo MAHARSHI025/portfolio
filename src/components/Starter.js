@@ -23,9 +23,7 @@ function Starter() {
 
             <div className=' mt-10'>
                 <h1 className='text-xl font-bold tracking-tighter sm:text-xl xl:text-xl/none mb-2'>About </h1>
-                <h3 className='rough text-balance'>At the end of 12th grade, I decide to be a software engineer.
-                As a dedicated software and web developer, I focus on building seamless digital solutions tailored to meet user needs. With a strong foundation in modern frameworks and programming languages, I excel in designing, developing, and deploying scalable applications. My commitment to staying updated with the latest industry trends ensures that I deliver innovative and reliable software products.
-                </h3>
+                <h3 className='rough text-balance'>At the end of 12th grade, I decided to become a software engineer. As a dedicated software and web developer, I focus on building seamless digital solutions tailored to user needs. With a strong foundation in modern frameworks and programming languages, I excel at designing, developing, and deploying scalable applications. My commitment to staying updated with the latest industry trends ensures that I deliver innovative and reliable software products. </h3>
             </div>
 
         </>

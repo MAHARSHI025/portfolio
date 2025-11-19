@@ -4,14 +4,12 @@ import { Timeline } from '@/components/ui/timeline';
 import Chess from '@/components/Chess';
 
 function page() {
-   const puzzle = {
-    fen: "r1bq2r1/b4pk1/p1pp1p2/1p2pP2/1P2P1PB/3P4/1PPQ2P1/R3K2R w",
-    sequence: [
-        "Qh6", "Kxh6",
-        "Bxf6#"
-    ],
-    description: "Easy challenge — mate in 2 with a Queen sacrifice"
-};
+    const puzzle = {
+        fen: "2K3NR/PPP3PP/5P2/1n2P3/1B6/4bp1p/pp3ppp/1k1r4 w - - 0 1",
+        sequence: ["nxh2+", "Kg1", "re1#"],
+        description: "Easy challenge — mate in 2 with a Queen sacrifice"
+    };
+
 
 
     return (

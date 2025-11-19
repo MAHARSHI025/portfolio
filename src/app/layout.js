@@ -1,4 +1,4 @@
-import { DockDemo } from "@/components/Navbar";
+import { DockDemo, FloatingDockDemo } from "@/components/Navbar";
 import "./globals.css";
 import BlurFade from "@/components/magicui/blur-fade";
 
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           </BlurFade>
         </section>
 
-        <DockDemo></DockDemo>
+        <FloatingDockDemo />
       </body>
     </html>
   );

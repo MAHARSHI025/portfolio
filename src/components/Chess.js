@@ -125,7 +125,7 @@ export default function Chessgame({ puzzle }) {
   }, [puzzle]);
 
   return (
-    <div className="max-w-md mx-auto p-4">
+    <div className="max-w-md mx-auto p-4 ">
       <h3 className="text-lg font-semibold mb-2">Chess puzzle — mate in 2</h3>
       {description && <p className="text-sm text-gray-600 mb-3">{description}</p>}
 

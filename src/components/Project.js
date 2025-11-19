@@ -27,7 +27,7 @@ function Project() {
                             <a href="https://thoughter.vercel.app/">
                                 <h1 className='bg-black text-white px-3 py-1 rounded-lg  flex items-center justify-between'>
                                     Website
-                                    <span class="material-symbols-outlined">
+                                    <span className="material-symbols-outlined">
                                         north_east
                                     </span></h1>
                             </a>
