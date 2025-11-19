@@ -21,7 +21,7 @@ function Skills() {
                     <SkillBlock name="Next.js" image="https://cdn.worldvectorlogo.com/logos/next-js.svg" />
                     <SkillBlock name="Express.js" image="https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png" />
                 </div>
-          </div>  
+            </div>
 
             <div className=' mt-10'>
                 <h1 className='text-xl font-bold tracking-tighter sm:text-xl xl:text-xl/none mb-2'>Languages </h1>
@@ -49,7 +49,7 @@ function Skills() {
                     </div>
                     <div className='flex blackish gap-4'>
                         <SkillBlock name="Tailwind" image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png" />
-                        
+
                     </div>
                     <div className='flex blackish gap-4'>
                         <SkillBlock name="MongoDB" image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITHn_TgjDyhdWvePNw0mveDrTUr00GLfv_Q&s" />
